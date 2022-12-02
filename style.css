@@ -81,3 +81,8 @@ img {
     /* espace entre les enfants */
     gap: 1rem;
   }
+
+  .caroussel_lien {
+    text-decoration: none;
+    color: blue;
+  }
