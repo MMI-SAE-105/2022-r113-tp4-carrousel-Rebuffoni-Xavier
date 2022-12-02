@@ -11,7 +11,7 @@ margin: 0;
 }
 img {
     /* image responsive, largeur maxi */
-    width: 100%;
+    max-width: 100%;
     /* hauteur "auto" */
     height: auto;
 
@@ -21,12 +21,17 @@ img {
     display: flex;
     /* largeur du parent */
     
+    overflow-x: scroll;
 }
 .carrousel_ecran {
     /* largeur du parent pour chaque enfant */
+    width: 100%;
     /* permet de garder toute la largeur du parent */
+    flex: none;
 }
 .carrousel_ecran figure {
     /* enlève les marges par défaut */
     margin: 0;
+
+    scroll-behavior: smooth;
 }
