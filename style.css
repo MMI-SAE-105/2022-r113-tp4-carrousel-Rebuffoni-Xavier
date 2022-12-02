@@ -22,16 +22,21 @@ img {
     /* largeur du parent */
     
     overflow-x: scroll;
+    scroll-snap-type: x mandatory;
 }
 .carrousel_ecran {
     /* largeur du parent pour chaque enfant */
     width: 100%;
     /* permet de garder toute la largeur du parent */
     flex: none;
+    scroll-snap-align: start;
 }
 .carrousel_ecran figure {
     /* enlève les marges par défaut */
     margin: 0;
 
     scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
